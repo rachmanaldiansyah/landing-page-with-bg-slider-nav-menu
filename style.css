@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.4rem 2rem;
+	z-index: 999;
+}
+.brand-and-toggler {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-brand {
+	color: #fff;
+	font-weight: 800;
+	font-size: 2rem;
+	text-decoration: none;
+}
+.nav-show-btn {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.8rem;
+	cursor: pointer;
+	outline: 0;
+}
+.navbar-collapse {
+	background: rgba(0, 0, 0, 0.95);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.showNav {
+	display: flex!important;
+}
+.nav-hide-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 1.4rem 2rem;
+	font-size: 1.8rem;
+	cursor: pointer;
+	color: #fff;
+	background: transparent;
+	border: none;
+	outline: 0;
+}
+.navbar-nav {
+	display: flex;
+	flex-direction: column;
+}
+.nav-item {
+	list-style-type: none;
+	padding: 0.2rem 3.6rem;
+	margin: 1rem 0;
+	text-align: center;
+}
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: color 0.5s ease;
+}
+.nav-link:hover {
+	color: #c7c7c7;
+}
+.showcase-wrapper {
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+.showcase-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	transition: all 0.5s ease;
+}
+.showcase {
+	min-width: 100%;
+	color: #fff;
+	display: grid;
+	place-content: center;
+	place-items: center;
+	text-align: center;
+}
+.showcase h1 {
+	font-size: 1.8rem;
+	width: 90%;
+	margin: 1.5rem auto;
+}
+.showcase button {
+	background: transparent;
+	border: 2.5px solid #fff;
+	color: #fff;
+	font-family: inherit;
+	text-transform: uppercase;
+	padding: 0.8rem 1.4rem;
+	outline: 0;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.showcase button:hover {
+	background: #fff;
+	color: #000;
+}
+.dotted-btns {
+	position: absolute;
+	bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.dotted-btns span {
+	margin: 0 0.5rem;
+	color: #fff;
+	font-size: 0.8rem;
+	opacity: 0.9;
+	cursor: pointer;
+	transition: opacity 0.5s ease;
+}
+.dotted-btns span:hover {
+	opacity: 0.7;
+}
+.showcase:nth-child(1) {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url(img/bg-1.jpg) center/cover no-repeat;
+}
+.showcase:nth-child(2) {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url(img/bg-2.jpg) center/cover no-repeat;
+}
+.showcase:nth-child(3) {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+	url(img/bg-3.jpg) center/cover no-repeat;
+}
+
+@media screen and (min-width: 400px) {
+	.showcase h1 {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.showcase h1 {
+		font-size: 5rem;
+	}
+	.showcase button {
+		font-size: 1.05rem;
+	}
+}
